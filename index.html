@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zim Gold Miner</title>
+<style>
+body { text-align: center; background-color: #222; color: gold; font-family: sans-serif; }
+img { width: 200px; cursor: pointer; margin-top: 50px; }
+img:active { transform: scale(0.95); }
+</style>
+</head>
+<body>
+<h1>Zim Gold Miner</h1>
+<p>Grams Mined: <span id="score">0</span></p>
+<img src="images/hamster.jpg" onclick="mine()">
+
+<script>
+let count = 0;
+function mine() {
+count++;
+document.getElementById('score').innerText = count;
+}
+</script>
+</body>
+</html>
+
